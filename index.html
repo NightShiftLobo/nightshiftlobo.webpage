@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NightShiftLobo — Precision Dark</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Neutrals / Backgrounds */
+  --n0:#1B1D23; --n1:#22252C; --n2:#2A2E37; --n3:#303540; --n4:#383C47;
+  /* Soft Foregrounds / Text */
+  --f0:#D7DAE3; --f1:#BFC3D0; --f2:#A8ACC0;
+  /* Semantic / Syntax */
+  --s0:#D67A7A; --s1:#E08A8A; --s2:#6CBF84; --s3:#81D99A;
+  --s4:#CFAE6A; --s5:#E0C27A; --s6:#6C82D9; --s7:#7C93F2;
+  --s8:#C25680; --s9:#D05A8E; --s10:#56B6C2; --s11:#6ED0D6;
+  /* Accents / Bright Variants */
+  --a0:#F0F2F6; --a1:#FFE5B4; --a2:#FFCC99; --a3:#B2A1FF; --a4:#D1C0FF; --a5:#FFD6E7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:radial-gradient(circle at 15% -10%, var(--n2) 0%, var(--n0) 50%);
+  color:var(--f0);
+  line-height:1.6;
+}
+.container{max-width:1300px;margin:auto;padding:2rem}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 0;
+  border-bottom:1px solid var(--n3);
+}
+.logo{
+  font-weight:900;
+  font-size:1.4rem;
+  background:linear-gradient(90deg,var(--s6),var(--s10));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+nav a{
+  color:var(--f2);
+  text-decoration:none;
+  margin-left:2rem;
+  font-size:.9rem;
+}
+nav a:hover{color:var(--s6)}
+.hero{
+  text-align:center;
+  padding:6rem 1rem 4rem 1rem;
+}
+.hero h1{
+  font-size:3.8rem;
+  font-weight:900;
+  margin-bottom:1rem;
+  background:linear-gradient(90deg,var(--s6),var(--s10),var(--s7));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{
+  max-width:750px;
+  margin:auto;
+  color:var(--f1);
+  font-size:1.15rem;
+}
+.section-title{
+  font-size:2rem;
+  font-weight:800;
+  margin-bottom:3rem;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:2rem;
+}
+.card{
+  background:var(--n2);
+  border:1px solid var(--n3);
+  border-radius:22px;
+  padding:2rem;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  border-color:var(--s6);
+}
+.card h3{margin-bottom:.6rem}
+.card p{color:var(--f2);font-size:.95rem}
+.icon{margin-bottom:1rem}
+.palette-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:1.2rem;
+}
+.swatch{
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--n3);
+  background:var(--n2);
+  transition:.3s;
+}
+.swatch:hover{transform:scale(1.05)}
+.swatch-color{height:90px}
+.swatch-info{
+  padding:.8rem;
+  text-align:center;
+  font-size:.8rem;
+}
+.swatch-info span{display:block;color:var(--f1)}
+.footer{
+  border-top:1px solid var(--n3);
+  padding:3rem 0;
+  text-align:center;
+  color:var(--f1);
+  font-size:.85rem;
+}
+.btn-primary{
+  display:inline-block;
+  padding:.8rem 1.6rem;
+  border-radius:14px;
+  background:var(--s6);
+  color:var(--n0);
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+.btn-primary:hover{
+  background:var(--s7);
+  box-shadow:0 0 25px rgba(124,147,242,0.5);
+}
+@media(max-width:768px){
+  .hero h1{font-size:2.5rem}
+  nav a{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav>
+<div class="logo">NightShiftLobo</div>
+<div>
+<a href="#ecosystem">Ecosystem</a>
+<a href="#palette">26 Colors</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#github">GitHub</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Precision Dark. Engineered Focus.</h1>
+<p>NightShiftLobo is an ultra-low eye strain theme ecosystem engineered for developers and power users who work long hours. Fully optimized for Terminal, Editor, Shell, and System UI.</p>
+</div>
+
+<section id="ecosystem">
+<div class="section-title">Theme Ecosystem</div>
+<div class="grid">
+
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>DankMaterialShell</h3>
+<p>Full desktop shell integration with consistent surfaces, borders, and accent layering.</p>
+</div>
+
+<div class="card">
+<div class="icon"></div>
+<h3>Neovim</h3>
+<p>Semantic token tuning, low eye fatigue contrast ratios, and refined syntax harmony.</p>
+</div>
+
+<div class="card">
+<div class="icon"></div>
+<h3>Kitty Terminal</h3>
+<p>Balanced 26-color ANSI palette with gentle highlights and deep neutral backgrounds.</p>
+</div>
+
+<div class="card">
+<div class="icon">📝</div>
+<h3>VSCode</h3>
+<p>UI token mapping and semantic highlighting in progress.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌐</div>
+<h3>Browser Theming</h3>
+<p>Minimal UI chrome styling to extend NightShiftLobo into the web layer.</p>
+</div>
+
+</div>
+</section>
+
+<section id="palette">
+<div class="section-title">26-Color Palette with Names</div>
+<div class="palette-grid">
+<!-- Neutrals -->
+<div class="swatch"><div class="swatch-color" style="background:var(--n0)"></div><div class="swatch-info">Eclipse<span>#1B1D23</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--n1)"></div><div class="swatch-info">Shadow<span>#22252C</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--n2)"></div><div class="swatch-info">Obsidian<span>#2A2E37</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--n3)"></div><div class="swatch-info">Graphite<span>#303540</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--n4)"></div><div class="swatch-info">Storm<span>#383C47</span></div></div>
+<!-- Foregrounds -->
+<div class="swatch"><div class="swatch-color" style="background:var(--f0)"></div><div class="swatch-info">Moonlight<span>#D7DAE3</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--f1)"></div><div class="swatch-info">Mist<span>#BFC3D0</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--f2)"></div><div class="swatch-info">Fog<span>#A8ACC0</span></div></div>
+<!-- Semantic / Syntax -->
+<div class="swatch"><div class="swatch-color" style="background:var(--s0)"></div><div class="swatch-info">Rosebud<span>#D67A7A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s1)"></div><div class="swatch-info">Coral Blush<span>#E08A8A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s2)"></div><div class="swatch-info">Fern<span>#6CBF84</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s3)"></div><div class="swatch-info">Mint<span>#81D99A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s4)"></div><div class="swatch-info">Sand<span>#CFAE6A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s5)"></div><div class="swatch-info">Amber<span>#E0C27A</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s6)"></div><div class="swatch-info">Sapphire<span>#6C82D9</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s7)"></div><div class="swatch-info">Bluebell<span>#7C93F2</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s8)"></div><div class="swatch-info">Orchid<span>#C25680</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s9)"></div><div class="swatch-info">Fuchsia<span>#D05A8E</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s10)"></div><div class="swatch-info">Aqua<span>#56B6C2</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--s11)"></div><div class="swatch-info">Ice<span>#6ED0D6</span></div></div>
+<!-- Accents -->
+<div class="swatch"><div class="swatch-color" style="background:var(--a0)"></div><div class="swatch-info">Cloud<span>#F0F2F6</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--a1)"></div><div class="swatch-info">Apricot<span>#FFE5B4</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--a2)"></div><div class="swatch-info">Peach<span>#FFCC99</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--a3)"></div><div class="swatch-info">Lavender<span>#B2A1FF</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--a4)"></div><div class="swatch-info">Lilac<span>#D1C0FF</span></div></div>
+<div class="swatch"><div class="swatch-color" style="background:var(--a5)"></div><div class="swatch-info">Pink Pearl<span>#FFD6E7</span></div></div>
+</div>
+</section>
+
+<section id="github">
+<div class="section-title">GitHub Repository</div>
+<div class="card" style="text-align:center;padding:3rem;">
+<div style="font-size:3rem;margin-bottom:1rem;">🐙</div>
+<h3>NightShiftLobo on GitHub</h3>
+<p style="color:var(--f1); max-width:600px;margin:auto;">Explore source code, installation guides, and contribute to the NightShiftLobo ecosystem.</p>
+<div style="margin-top:2rem;"><a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn-primary">View Repository</a></div>
+</div>
+</section>
+
+<div class="footer">NightShiftLobo — Precision Dark. Engineered Focus.</div>
+
+</div>
+</body>
+</html>
